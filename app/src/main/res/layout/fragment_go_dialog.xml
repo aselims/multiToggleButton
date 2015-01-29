@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <GridLayout
+        android:id="@+id/grid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        >
+        <ToggleButton
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:id="@+id/toggleButtonA"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/transport_a"
+            android:layout_margin="2dp"
+
+            />
+        <ToggleButton
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:id="@+id/toggleButtonB"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/transport_b"
+            android:layout_margin="2dp"
+            />
+        <ToggleButton
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:id="@+id/toggleButtonC"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/transport_c"
+            android:layout_margin="2dp"
+            />
+        <ToggleButton
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:id="@+id/toggleButtonD"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/transport_d"
+            android:layout_margin="2dp"
+            />
+        </GridLayout>
+    <View
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/white"
+        android:layout_below="@+id/grid1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <!--#426385-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/line1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            style="@style/time_style"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            style="@style/time_style"
+            android:textColor="#08afea"/>
+        <EditText
+            android:id="@+id/editTextMinutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numeric="integer"
+            android:padding="5dp"
+            android:maxLength="2"
+            style="@style/time_style"
+            android:inputType="number"/>
+        </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

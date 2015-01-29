@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">multiToggleButton</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="alert_dialog_ok">Ok</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="dialog_title">via</string>
+</resources>
